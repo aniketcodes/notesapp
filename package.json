@@ -1,0 +1,22 @@
+{
+  "name": "notesapp",
+  "version": "1.0.0",
+  "description": "notes app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aniketcodes/notesapp.git"
+  },
+  "author": "aniketcodes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aniketcodes/notesapp/issues"
+  },
+  "homepage": "https://github.com/aniketcodes/notesapp#readme",
+  "dependencies": {
+    "chalk": "^5.0.0"
+  }
+}
