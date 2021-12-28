@@ -51,5 +51,24 @@ module.exports = {
       console.log( `Removing notes with title ${ title }` )
 
     }
+  },
+  listNotes: function () {
+    let notes = this.loadNotes();
+    console.log( "Your Notes" );
+    console.table( notes );
+
+  },
+  readNote: function ( title ) {
+    let notes = this.loadNotes();
+    let note = notes.filter( ( note ) => {
+      return note.title===title
+    } )
+
+    if ( note.length>0 ) {
+      console.log( `Title : ${ note[0].title } \nBody : ${ note[0].body } ` );
+    }
+    else {
+      console.log( "No notes found" );
+    }
   }
 }
